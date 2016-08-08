@@ -1,6 +1,6 @@
 ---
 driver:
-  name: vagrant
+  name: docker
 
 driver_config:
   network:
@@ -9,6 +9,9 @@ driver_config:
 
 provisioner:
   name: chef_zero
+
+verifier:
+  name: inspec
 
 platforms:
   - name: ubuntu-14.04
